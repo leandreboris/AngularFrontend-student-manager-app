@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card">
+        <div class="car-body">
+            <h3 class="card-title">Students List</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>eCode</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let student of students">
+                        <td>{{student.eCode}}</td>
+                        <td>{{student.firstName}}</td>
+                        <td>{{student.lastName}}</td>
+                        <td>{{student.age}}</td>
+                        <td>{{student.email}}</td>
+                        <td>
+                            <button (click)="viewStudent(student)" class="btn btn-outline-secondary">Details</button>
+                            <button (click)="updateStudent(student)" class="btn btn-outline-info">Update</button>
+                            <button (click)="deleteStudent(student.id)" class="btn btn-outline-danger ">Delete</button>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

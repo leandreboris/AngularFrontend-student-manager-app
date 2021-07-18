@@ -1,0 +1,21 @@
+<div class="card" style="width: 38rem;">
+    <div class="profile">
+        <img class="card-img-top" src="{{student.imageUrl}}" alt="Profile">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Informations about this student</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">eCode : {{student.eCode}}</li>
+        <li class="list-group-item">First Name : {{student.firstName}}</li>
+        <li class="list-group-item">Last Name : {{student.lastName}}</li>
+        <li class="list-group-item">Age : {{student.age}}</li>
+        <li class="list-group-item">Level : {{student.level}}</li>
+        <li class="list-group-item">Email : {{student.email}}</li>
+    </ul>
+    <div class="card-body">
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-secondary" routerLink="/students" role="button">Go To Students List</button>
+        </div>
+    </div>
+</div>

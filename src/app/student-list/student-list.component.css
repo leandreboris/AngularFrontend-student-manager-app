@@ -1,0 +1,13 @@
+.container {
+    margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-outline-danger,
+.btn-outline-info {
+    margin-left: 10px;
+}

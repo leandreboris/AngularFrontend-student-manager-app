@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3 container">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title"> Create Student</h3>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="fistName">First Name </label>
+                    <input type="text" [(ngModel)]="student.firstName" class=" form-control  sr-only" name="firstName " id="firstName " />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name </label>
+                    <input type="text" [(ngModel)]="student.lastName" class=" form-control " name="lastName " id="lastName " />
+                </div>
+                <div class="form-group">
+                    <label for="age">Age </label>
+                    <input type="number" [(ngModel)]="student.age" class=" form-control " name="age " id="age " />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email </label>
+                    <input type="email" [(ngModel)]="student.email" class=" form-control " name="email " id="email " />
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">Image URL </label>
+                    <input type="text" [(ngModel)]="student.imageUrl" class=" form-control " name="imageUrl " id="imageUrl " />
+                </div>
+                <br/>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary btn-block" type="submit">Create Student</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
